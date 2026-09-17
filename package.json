@@ -1,0 +1,77 @@
+{
+  "name": "research-editor",
+  "version": "1.0.0",
+  "description": "Dastyare Pajohesh Dinzey - Research Assistant",
+  "main": "main.js",
+  "author": "Mohammad",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.research.editor",
+    "productName": "Dastyare Pajohesh Dinzey",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+  "main.js",
+  "preload.js",
+  "patch.js",
+  "ux-pack.js",
+  "about.js",
+  "app-fix.js",
+  "save-fix.js",
+  "debug-panel.js",
+  "remember-folder.js",
+  "speed-only.js",
+  "custom-alerts.js",
+  "pack2.js",
+  "pack3.js",
+  "project-titles.js",
+  "title-fix.js",
+  "safe-create.js",
+  "v11-pack.js",
+  "fa-words.txt",
+  "index.html",
+  "icon.ico",
+  "package.json",
+  "models/vosk-model-small-fa-0.5.tar.gz",
+  "node_modules/vosk-browser/**/*"
+],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Dastyare Pajohesh Dinzey",
+      "language": "1069"
+    }
+  },
+  "dependencies": {
+    "vosk-browser": "^0.0.8"
+  }
+}
